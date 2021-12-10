@@ -80,6 +80,25 @@ console.log(lastName);
 
 console.log(city);
 
-person.email='bharathabk@gmail.com';
+person.email = 'bharathabk@gmail.com';
 
 console.log(person);
+
+const todo = [{
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with team',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appointment',
+        isCompleted: false
+    }
+];
+
+console.log(todo[0].text)
