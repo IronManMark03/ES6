@@ -130,7 +130,14 @@ for (let i = 0; i < todo.length; i++) {
 
 //For of loop
 
-for(let newTodo of todo){
+for (let newTodo of todo) {
     console.log(newTodo.id);
     console.log(newTodo.text);
 }
+
+// forEach, map, filter
+
+todo.forEach(function(traceText){
+    console.log(traceText.text)
+
+});
