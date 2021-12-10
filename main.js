@@ -115,10 +115,22 @@ for (let i = 0; i <= 10; i++) {
 
 // while
 
-let i=0;
+let i = 0;
 
-while(i<10)
-{
+while (i < 10) {
     console.log(`while loop number:${i}`);
     i++;
+}
+
+//For Loop using in Json
+
+for (let i = 0; i < todo.length; i++) {
+    console.log(todo[i].text);
+}
+
+//For of loop
+
+for(let newTodo of todo){
+    console.log(newTodo.id);
+    console.log(newTodo.text);
 }
