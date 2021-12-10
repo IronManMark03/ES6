@@ -137,7 +137,39 @@ for (let newTodo of todo) {
 
 // forEach, map, filter
 
-todo.forEach(function(traceText){
+todo.forEach(function (traceText) {
     console.log(traceText.text)
 
 });
+
+//map
+
+const todoTex = todo.map(function (traceText) {
+
+    return traceText.text
+
+});
+
+console.log(todoTex);
+
+// filter
+
+const todoCompleted = todo.filter(function (traceID) {
+
+    return traceID.isCompleted === true;
+
+});
+
+console.log(todoCompleted);
+
+// filter with map
+
+const todoCompletedText = todo.filter(function (traceID) {
+
+    return traceID.isCompleted === true;
+
+}).map(function (isCompletedText) {
+    return isCompletedText.text
+})
+
+console.log(todoCompletedText);
